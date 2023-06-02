@@ -1,0 +1,240 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Align - Online Student Collaboration Platform</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F8F8F8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #2980B9;
+            padding: 20px;
+        }
+
+        .navbar-brand {
+            color: #FFFFFF;
+            font-size: 28px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .navbar-links li {
+            margin-left: 20px;
+        }
+
+        .navbar-links li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        .navbar-links li a:hover {
+            color: #1A5276;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 40px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2980B9;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            text-align: center;
+            color: #333333;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .feature {
+            flex-basis: 30%;
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #FFFFFF;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            color: #2980B9;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            color: #333333;
+            font-size: 16px;
+        }
+        
+        .cta-button {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta-button a {
+            display: inline-block;
+            background-color: #2980B9;
+            color: #FFFFFF;
+            padding: 12px 40px;
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button a:hover {
+            background-color: #1A5276;
+        }
+        /* Existing styles */
+
+.sidebar {
+  background-color: #2980B9;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 250px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Rest of the existing styles */
+
+        @media screen and (max-width: 600px) {
+            .container {
+                margin: 20px;
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .description {
+                font-size: 16px;
+            }
+
+            .features .feature {
+                flex-basis: 45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="/">Align</a>
+            <ul class="navbar-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/profile">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <!-- Sidebar content goes here -->
+        <h3>Sidebar Content</h3>
+        <ul>
+            <li><a href="/INFO">INFO</a></li>
+            <li><a href="/HowToUse">HOW TO USE</a></li>
+            <li><a href="/messages"></a></li>
+            <li><a href="/settings">Settings</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Welcome to Align</h1>
+        <p class="description">An Online Student Collaboration Platform</p>
+        <div class="features">
+            <div class="feature">
+                <img src="project.png" alt="Project">
+                <h3>Collaborate on Projects</h3>
+                <p>Work together with fellow students on various projects and assignments.</p>
+            </div>
+            <div class="feature">
+                <img src="materials.png" alt="Materials">
+                <h3>Share Study Materials</h3>
+                <p>Exchange study materials, notes, and resources to enhance your learning.</p>
+            </div>
+            <div class="feature">
+                <img src="professionals.png" alt="Professionals">
+                <h3>Interact with Professionals</h3>
+                <p>Connect with industry professionals to seek guidance and get help with your projects.</p>
+            </div>
+        </div>
+        <div class="cta-button">
+            <a href="/signup">Get Started</a>
+        </div>
+    </div>
+    
+</body>
+</html>
