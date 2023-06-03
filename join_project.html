@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join a Team - Project Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url(New\ Project\ \(2\).jpg);
+    }
+
+    .container {
+      max-width: 900px;
+      font-family: 'montserrat-alt1';
+      margin: 0 auto;
+      padding: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color:lightskyblue;
+      font-size: 36px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+
+    .search-box {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-box label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .search-box select,
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      font-size: 16px;
+      color: #555;
+    }
+
+    .search-box input[type="text"] {
+      width: 80%;
+    }
+
+    .search-box button {
+      background-color: lightskyblue;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .search-box button:hover {
+      background-color: lightskyblue;
+    }
+
+    .latest-projects {
+      margin-top: 30px;
+      margin-left: 160px;
+    }
+
+    .latest-projects h2 {
+      color: lightskyblue;
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .latest-projects .project {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      font-weight:5px;
+    }
+
+    .latest-projects .project p {
+      margin-bottom: 10px;
+      color: #555;
+      font-weight:10px;
+    }
+
+    .latest-projects .project button.apply-button {
+      background-color: #4285f4;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .latest-projects .project button.apply-button:hover {
+      background-color: #3367d6;
+    }
+    
+    @font-face {
+    font-family: 'montserrat-alt1';
+    src: url('montserrat-alt1/fonts/ttf/MontserratAlt1-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+    .container1 {
+    display: flex;
+}
+    .sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #EBEBEB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px;
+}
+
+.sidebar .company-name {
+    text-align: center;
+    font-size: 43px;
+    margin-top: 10px;
+    margin-bottom: 160px;
+    font-family: 'montserrat-alt1';
+}
+
+.sidebar .button {
+    display: block;
+    margin-bottom: 25px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(3, 6, 47);
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+}
+
+.sidebar .button:hover {
+    background-color: #e0e0e0;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.nav-bar .button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.nav-bar .button:hover {
+    background-color: #e0e0e0;
+}
+  </style>
+</head>
+<body>
+    <div class="container1">
+      <div class="sidebar">
+          <h2 class="company-name">ALIGN</h2>
+          <a class="button" href="infopage.html">Info</a>
+          <a class="button" href="create_a_project.html">Create Project</a>
+          <a class="button" href="rough.html">FAQs</a>
+          <a class="button" href="login.html">login</a>  
+      </div>
+      <div class="nav-bar">
+          <a class="button" href="chat.html">Home</a>
+          <a class="button" href="profile (1).html">GET STARTED</a>
+          <a class="button" style="background-color: rgb(59, 59, 220);" href="contactus.html">Contact Us</a>
+      </div>
+    </div>
+  <div class="container">
+    <h1>Join a Team - Project Search</h1>
+
+    <div class="search-box">
+      <label for="domain">Select a Domain:</label>
+      <select id="domain" name="domain">
+        <option value="python">Python</option>
+        <option value="cpp">C++</option>
+        <option value="ruby">Ruby</option>
+        <option value="webdev">Web Development</option>
+        <option value="data">Data Science</option>
+        <option value="mobile">Mobile Development</option>
+        <option value="design">Design</option>
+        <option value="networking">Networking</option>
+      </select>
+
+      <label for="months">Project Duration (in months):</label>
+      <select id="months" name="months">
+        <option value="1">1 month</option>
+        <option value="2">2 months</option>
+        <option value="3">3 months</option>
+        <option value="6">6 months</option>
+        <option value="12">12 months</option>
+      </select>
+
+      <label for="team-name">Search by Project Name:</label>
+      <input type="text" id="team-name" name="team-name">
+
+      <button type="submit">Search</button>
+    </div>
+
+    <div class="latest-projects">
+      <h2>Latest Projects</h2>
+
+      <div class="project">
+        <p><strong>Domain:</strong> Python</p>
+        <p><strong>Project Name:</strong> Web Scraping and Data Analysis</p>
+        <p><strong>Description:</strong> We are looking for a team member to help us scrape data from various websites using Python and perform data analysis to extract meaningful insights. Experience with libraries such as BeautifulSoup and Pandas is preferred.</p>
+        <p><strong>Project Duration:</strong> 3 months</p>
+        <button class="apply-button">Apply Now</button>
+      </div>
+
+      <div class="project">
+        <p><strong>Domain:</strong> C++</p>
+        <p><strong>Project Name:</strong> Game Development</p>
+        <p><strong>Description:</strong> Join our team of game developers to work on an exciting new project. We are developing a multiplayer game using C++ and need skilled programmers familiar with game engines and networking.</p>
+        <p><strong>Project Duration:</strong> 6 months</p>
+        <button class="apply-button">Apply Now</button>
+      </div>
+
+      <div class="project">
+        <p><strong>Domain:</strong> Ruby</p>
+        <p><strong>Project Name:</strong> E-commerce Website</p>
+        <p><strong>Description:</strong> Our team is building an e-commerce platform using Ruby on Rails. We are seeking web developers experienced in Ruby, HTML, CSS, and JavaScript to contribute to the development and implementation of various features.</p>
+        <p><strong>Project Duration:</strong> 12 months</p>
+        <button class="apply-button">Apply Now</button>
+      </div>
+
+      <div class="project">
+        <p><strong>Domain:</strong> Web Development</p>
+        <p><strong>Project Name:</strong> Responsive Website Design</p>
+        <p><strong>Description:</strong> We are looking for a talented web designer with expertise in responsive website design. The project involves creating visually appealing and user-friendly interfaces for desktop and mobile devices.</p>
+        <p><strong>Project Duration:</strong> 2 months</p>
+        <button class="apply-button">Apply Now</button>
+      </div>
+
+      <div class="project">
+        <p><strong>Domain:</strong> Data Science</p>
+        <p><strong>Project Name:</strong> Predictive Analytics</p>
+        <p><strong>Description:</strong> Join our team of data scientists to develop predictive models for analyzing large datasets. We are seeking individuals with expertise in machine learning algorithms and data visualization techniques.</p>
+        <p><strong>Project Duration:</strong> 6 months</p>
+        <button class="apply-button">Apply Now</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

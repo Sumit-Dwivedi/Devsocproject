@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Align</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            background-image: url(wallpaperflare.com_wallpaper.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container {
+            margin-top: 100px;
+            max-width: 800px;
+            color:#2980B9;
+            size:40px;
+            font-family: 'montserrat-alt1';
+            width: 90%;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: light;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color:#2980B9 ;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="password"],
+        .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            background-color: lightgrey;
+            color: #333333;
+            font-size: 16px;
+        }
+
+        .form-group input[type="submit"] {
+            background-color: #2980B9;
+            color: #FFFFFF;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .form-group input[type="submit"]:hover {
+            background-color: #1A5276;
+        }
+
+        .form-group input[type="submit"]:focus {
+            outline: none;
+        }
+
+        .company-name {
+            text-align: center;
+            margin-top: 20px;
+            color: #2980B9;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        @media only screen and (max-width: 1200px) {
+            .container {
+                max-width: 600px;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            .container {
+                max-width: 400px;
+            }
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                max-width: 300px;
+            }
+        }
+        @font-face {
+    font-family: 'montserrat-alt1';
+    src: url('montserrat-alt1/fonts/ttf/MontserratAlt1-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Align</h2>
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="name">Username:</label>
+                <input type="text" name="Name" id="name" placeholder="Your Username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Your Password" required>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <div class="company-name">
+            Powered by Align
+        </div>
+    </div>
+</body>
+</html>

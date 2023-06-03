@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Collaboration Website</title>
+  <style>
+    .name{
+    position: absolute;
+    top: -50px;
+    left: 0px;
+    margin:0;
+    padding-bottom: 30px;
+    font-size: 80px;
+
+
+}
+#sidebar-section{
+    list-style-type: none;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    width: 233px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:   grey;
+    color: black;
+    overflow-x: hidden;
+
+}
+.sidebar {
+    background-color:  #EBEBEB;
+    padding: 20px;
+    width: 250px;
+  }
+   
+.sidebar ul {
+
+    list-style-type: none;
+    padding: 0;
+    margin-top: 200px;
+  }
+  
+.sidebar ul li {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 34px;
+    font-size: 20px;
+
+  }
+  
+.sidebar ul li a {
+    background-color: #152130;
+    border-radius: 20px;
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'inter';
+    font-family: 'montserrat-alt1';
+    padding:20px;
+  }
+  
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url(wallpaperflare.com_wallpaper.jpg);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'montserrat-alt1';
+      margin-bottom: 30px;
+      color:lightskyblue;
+      font-size: 50px;
+      text-transform: uppercase;
+      letter-spacing: 0px;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 20px;
+      color:whitesmoke;
+      line-height: 1.6;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .feature {
+      width: 300px;
+      padding: 20px;
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature:before {
+      content: "";
+      position: absolute;
+      opacity:40%;
+      top: -10px;
+      left: -10px;
+      width: 1;
+      height: 100%;
+      background-color:lightsteelblue;
+      transition: width 0.3s;
+    }
+
+    .feature:hover {
+      transform: translateX(-10px);
+    }
+
+    .feature:hover:before {
+      width: 100%;
+    }
+
+    .feature h2 {
+      margin-top: 0;
+      color: #333;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      margin-bottom: 0;
+      color: #777;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .feature-icon {
+      font-size: 60px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .nav-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.nav-bar .button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.nav-bar .button:hover {
+    background-color: #e0e0e0;
+}
+    @font-face {
+    font-family: 'montserrat-alt1';
+    src: url('montserrat-alt1/fonts/ttf/MontserratAlt1-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+  </style>
+</head>
+<body>
+  <section id="sidebar-section">
+    <div class="sidebar">
+        <ul>
+            <li><a href="infopage.html">Info</a></li>       
+            <li><a href="create_a_project.html">Create Project</a></li>
+            <li><a href="rough.html">FAQs</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="nav-bar">
+      <a class="button" href="chat.html">Home</a>
+      <a class="button" href="profile (1).html">Get Started</a>
+      <a class="button" style="background-color: rgb(59, 59, 220);" href="join_project.html">Join A project</a>
+  </div>
+</section>
+  <div class="container">
+    <h1>Align</h1>
+
+    <p>Welcome to our online student collaboration website! We provide a platform for students to collaborate on projects, share study materials, and communicate seamlessly with their peers.</p>
+
+    
+
+    <div class="features">
+      <div class="feature">
+        <i class="feature-icon fas fa-graduation-cap"></i>
+        <h2>Project Collaboration</h2>
+        <p>Work together with your classmates on group projects, share files, and keep track of project progress.</p>
+      </div>
+
+      <div class="feature">
+        <i class="feature-icon fas fa-book-open"></i>
+        <h2>Study Material Sharing</h2>
+        <p>Share study guides, lecture notes, and other helpful resources with your peers to enhance your learning experience.</p>
+      </div>
+
+      <div class="feature">
+        <i class="feature-icon fas fa-comments"></i>
+        <h2>Discussion Forums</h2>
+        <p>Engage in discussions with other students, ask questions, and exchange ideas on various topics related to your courses.</p>
+      </div>
+
+      <div class="feature">
+        <i class="feature-icon fas fa-bell"></i>
+        <h2>Messaging and Notifications</h2>
+        <p>Stay connected with your classmates through our messaging system and receive notifications about updates and upcoming deadlines.</p>
+      </div>
+
+      <div class="feature">
+        <i class="feature-icon fas fa-user"></i>
+        <h2>Personalized Profiles</h2>
+        <p>Create your profile, showcase your achievements, and connect with students who share similar interests and goals.</p>
+      </div>
+
+      <div class="feature">
+        <i class="feature-icon fas fa-calendar-alt"></i>
+        <h2>Event Calendar</h2>
+        <p>Keep track of important dates, deadlines, and upcoming events related to your courses and student community.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+</body>
+</html>

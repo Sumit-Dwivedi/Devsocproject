@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(New\ Project\ \(2\).jpg);
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #EBEBEB;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding: 20px;
+}
+
+.sidebar .company-name {
+    text-align: center;
+    font-size: 43px;
+    margin-top: 10px;
+    margin-bottom: 160px;
+    font-family: 'montserrat-alt1';
+}
+
+.sidebar .button {
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: rgb(3, 6, 47);
+    text-decoration: none;
+    color: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.sidebar .button:hover {
+    background-color: lightblue;
+}
+
+.nav-bar {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.nav-bar .button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.nav-bar .button:hover {
+    background-color: #e0e0e0;
+}
+
+.separate{
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    margin-left: 300px;
+    margin-right: 100px;
+    padding-left: 200px;
+
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+}
+.section2 div{
+    padding-bottom: 0px;
+    padding-top: 80px;
+    height: 200px;
+    flex-wrap: wrap;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 200px;
+    padding-left: 1000px;
+    color: white;
+}
+.section2 div h3{
+    font-weight: 800;
+    font-family: 'magnetob';
+    font-size: 20px;
+
+}
+.separate .block{
+    border: solid grey 2px;
+    border-radius: 25px;
+    background-color: #D9D9D9;
+    padding: 30px 30px;
+    text-align: center;
+    margin-bottom: 25px;
+
+}
+.block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.block .content {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.block .picture {
+    flex: 1;
+}
+
+.block h2 {
+    margin-bottom: 10px;
+}
+
+.block p {
+    margin: 0;
+}
+@font-face {
+    font-family: 'montserrat-alt1';
+    src: url('montserrat-alt1/fonts/ttf/MontserratAlt1-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'magnetob';
+    src: url(inter-cufonfonts/Inter-ExtraBold.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
